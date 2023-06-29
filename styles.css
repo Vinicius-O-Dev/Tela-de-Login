@@ -1,0 +1,199 @@
+:root {
+  --color-light-50: #ffffff;
+  --color-ligh-100: #eeeeee;
+
+  --color-dark-50: #464646;
+  --color-dark-100: #232323;
+  --color-dark-900: #000000;
+
+  --color-red-50: #da5552;
+
+  --color-blue-50: #4361ee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-ligh-100);
+}
+
+.image-left {
+  width: 50%;
+  height: 100vh;
+  background-image: url("./assets/Background.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+}
+
+.login-container {
+  width: 50%;
+  height: 100vh;
+  padding: 30px;
+  overflow: hidden;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.top-login {
+  width: 100%;
+  height: 40px;
+}
+
+.top-login i {
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+  font-size: 25px;
+  color: #ffb703;
+}
+
+.top-login p {
+  display: inline-block;
+  font-size: 17px;
+  padding-left: 73%;
+  color: var(--color-dark-50);
+}
+
+.top-login span {
+  cursor: pointer;
+  color: var(--color-blue-50);
+}
+
+.top-login span:hover {
+  opacity: 0.9;
+}
+
+.top-login span:active {
+  opacity: 0.5;
+}
+
+.main-login {
+  width: 100%;
+  margin-top: 150px;
+}
+
+.main-login h1 {
+  font-weight: bold;
+  font-size: 40px;
+  color: var(--color-dark-50);
+}
+
+.main-login p {
+  font-size: 15px;
+  color: var(--color-dark-50);
+  margin: 20px 0 30px 0;
+  letter-spacing: 2px;
+}
+
+.main-login form {
+  position: relative;
+}
+
+.main-login input {
+  width: 400px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 45px;
+  margin: 0 auto;
+  outline: none;
+  font-size: 14px;
+}
+
+.main-login .input-password {
+  margin-top: 15px;
+}
+
+.main-login #user-icon {
+  color: var(--color-dark-50);
+  position: absolute;
+  margin-left: 13px;
+  top: 20px;
+  font-size: 20px;
+}
+
+.main-login #password-icon {
+  color: var(--color-dark-50);
+  position: absolute;
+  top: 95px;
+  margin-left: 11px;
+  font-size: 20px;
+}
+
+.main-login span {
+  cursor: pointer;
+  display: block;
+  margin-top: 25px;
+  margin-left: 258px;
+  margin-bottom: 40px;
+  font-size: 14px;
+  color: var(--color-dark-50);
+  transition: 0.2s ease-in-out;
+}
+
+.main-login span:hover {
+  color: var(--color-blue-50);
+}
+
+.main-login span:active {
+  opacity: 0.5;
+}
+
+.main-login button {
+  width: 400px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--color-red-50);
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--color-light-50);
+  box-shadow: 0px 8px 37px 0px rgba(218, 85, 82, 0.46);
+  cursor: pointer;
+}
+
+.main-login button:hover {
+  opacity: 0.8;
+}
+
+.main-login button:active {
+  opacity: 0.5;
+}
+
+.bottom-login {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.bottom-login p {
+  margin-bottom: 40px;
+  font-size: 14px;
+  color: var(--color-dark-50);
+}
+
+.social-medias {
+  width: 100%;
+}
+.social-medias img {
+  cursor: pointer;
+  width: 35px;
+  transition: 0.5s;
+}
+
+.social-medias .apple-logo {
+  margin: 0 30px;
+}
+
+.social-medias img:hover {
+  transform: scale(1.2);
+}
