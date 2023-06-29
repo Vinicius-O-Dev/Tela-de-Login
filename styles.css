@@ -198,3 +198,20 @@
 .social-medias img:hover {
   transform: scale(1.2);
 }
+
+@media only screen and (max-width: 900px) {
+  .image-left {
+    display: none;
+  }
+
+  .login-container {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: fixed;
+  }
+
+  .top-login p {
+    font-size: 14px;
+  }
+}
