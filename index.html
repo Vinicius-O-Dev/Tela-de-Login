@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,18 +17,18 @@
     <div class="container">
       <div class="image-left"></div>
 
-      <div class="login-container">
-        <div class="top-login">
-          <i class="fa-solid fa-moon"></i>
+      <div id="login-container" class="login-container">
+        <div id="top" class="top-login">
+          <i id="moon-icon" class="fa-solid fa-moon"></i>
           <p>Not a member? <span>Register now</span></p>
         </div>
 
-        <div class="main-login">
+        <div id="main" class="main-login">
           <h1>Hello Again!</h1>
           <p>Welcome back you've been missed!</p>
 
-          <form>
-            <div class="container-username">
+          <form class="login-form">
+            <div id="username" class="container-username">
               <i id="user-icon" class="fa-solid fa-user"></i>
               <input type="text" placeholder="Enter username" />
             </div>
@@ -43,7 +43,7 @@
             </div>
           </form>
 
-          <span>Recovery Password</span>
+          <span id="recovery">Recovery Password</span>
           <button type="button">Sign In</button>
         </div>
 
@@ -59,4 +59,5 @@
       </div>
     </div>
   </body>
+  <script src="./script.js"></script>
 </html>

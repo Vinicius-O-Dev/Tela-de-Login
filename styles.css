@@ -32,6 +32,7 @@
   background-image: url("./assets/Background.jpg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   display: inline-block;
 }
 
@@ -43,6 +44,7 @@
   display: inline-block;
   position: absolute;
   text-align: center;
+  animation: dark-to-light 0.3s ease-in-out;
 }
 
 .top-login {
@@ -199,6 +201,41 @@
   transform: scale(1.2);
 }
 
+.dark.login-container {
+  color: var(--color-light-50);
+  background-color: var(--color-dark-100);
+  animation: light-to-dark 0.3s ease-in-out;
+}
+
+.dark.login-container p,
+.dark.login-container h1,
+.dark.login-container #recovery {
+  color: var(--color-light-50);
+}
+
+.dark.login-container #recovery:hover {
+  color: var(--color-blue-50);
+}
+
+@keyframes dark-to-light {
+  0% {
+    background-color: var(--color-dark-100);
+  }
+
+  100% {
+    background-color: var(--color-ligh-100);
+  }
+}
+
+@keyframes light-to-dark {
+  0% {
+    background-color: var(--color-light-100);
+  }
+
+  100% {
+    background-color: var(--color-dark-100);
+  }
+}
 @media only screen and (max-width: 900px) {
   .image-left {
     display: none;
@@ -206,7 +243,7 @@
 
   .login-container {
     width: 100%;
-    height: auto;
+    height: 100vh;
     display: block;
     position: fixed;
   }
